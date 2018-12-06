@@ -10,30 +10,52 @@ The folder should contain
 
 ## Instructions
 
-### No Perturbations No RW Control
+please execute missions in order
 
-click on the reaction wheel block and click switch to turn off RW
+### Reference Profile 
+> No perturbations
+> no initial pointing error
+> no attitude controller
 
-click on Dynamics block and click switch to turn off perturbations
+click on the reaction wheel block and click switch to off position to turn off RW
 
-Observe reference trajectory in dynamics model scope `quatTrue`
+click on Dynamics block and click switch to off position to turn off perturbations
 
-### RW Control No Perturbations No Sensor noise 
-
-click on the reaction wheel block and click switch to turn on RW
-
-click on sensors block and click switch to turn off sensor noise
-
-click on Dynamics block and click switch to turn off perturbations
+click on Dynamics block and click switch to off position to turn off pointing error
 
 Observe reference trajectory in dynamics model scope `quatTrue`
 
-### RW Control with Perturbations and sensor noise
+### Mission 1:
+> Yes perturbations
+> Yes initial pointing error.
+> No Control loop
 
-click on the reaction wheel block and click switch to turn on RW
+click on Dynamics block and click switch to on position to turn on perturbations
 
-click on sensors block and click switch to turn on sensor noise
+click on Dynamics block and click switch to on position to turn on pointing error
 
-click on Dynamics block and click switch to turn on perturbations
+Observe reference trajectory in dynamics model scope `quatTrue`
+
+Observe Torques by clicking `Aerodynamic Torque` and `Magnetic Torque`
+
+### Mission 2:
+> Yes perturbations
+> Yes initial pointing error. 
+> No sensor error 
+> Yes Controller on 
+
+click on sensors block and click switch to off position to turn off sensor noise
+
+click on Reaction Wheels block and click switch to on position to turn on RW
+
+Observe reference trajectory in dynamics model scope `quatTrue`
+
+### Full Mission:
+> Yes perturbations
+> Yes initial pointing error
+> Yes sensor measurement noise
+> Yes Controller 
+
+click on sensors block and click switch to on position to turn on sensor noise
 
 Observe reference trajectory in dynamics model scope `quatTrue`
