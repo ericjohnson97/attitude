@@ -21,7 +21,7 @@ click on the reaction wheel block and click switch to off position to turn off R
 
 click on Dynamics block and click switch to off position to turn off perturbations
 
-click on Dynamics block and click switch to off position to turn off pointing error
+click on Dynamics block and click switches to off position to turn off pointing error
 
 Observe reference trajectory in dynamics model scope `quatTrue`
 
@@ -32,7 +32,7 @@ Observe reference trajectory in dynamics model scope `quatTrue`
 
 click on Dynamics block and click switch to on position to turn on perturbations
 
-click on Dynamics block and click switch to on position to turn on pointing error
+click on Dynamics block and click switches to on position to turn on pointing error
 
 Observe reference trajectory in dynamics model scope `quatTrue`
 
@@ -59,3 +59,5 @@ Observe reference trajectory in dynamics model scope `quatTrue`
 click on sensors block and click switch to on position to turn on sensor noise
 
 Observe reference trajectory in dynamics model scope `quatTrue`
+
+Observe reaction wheel angular velocities by clicking the actuators block and clicking the `reaction wheel angular velocity` scope
